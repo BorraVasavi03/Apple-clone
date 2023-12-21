@@ -1,0 +1,37 @@
+  @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+*{
+    margin:0;
+    font-family: 'Macondo', cursive;
+}
+.navbar{
+background-color: gray;
+display: flex;
+min-height: 20px;
+}
+.logo-image{
+height: 20px;
+margin: 0px 10px;
+}
+.parent{
+    width:100%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.child{
+    cursor: pointer;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width:80vw;
+    height: 25vh;
+    margin: 50px 20px;
+}
+.result-parent{
+    display:flex;
+}
