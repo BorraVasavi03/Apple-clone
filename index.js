@@ -9,6 +9,17 @@ function submit()
     console.log("Email",emailValue);
     var passwordValue=document.getElementById("passwordField").value;
     console.log("password",passwordValue);
+    var table=document.getElementById("dataTable")
+    var tablebody=document.getElementById("tBodyData")
+    var row=tablebody.insertRow();
+    var col1=row.insertCell(0);
+    var col2=row.insertCell(1);
+
+    col1.innerHTML=emailValue;
+    col2.innerHTML=passwordValue;
+
+    document.getElementById("emailField").value="";
+    document.getElementById("passwordField").value="";
 
 if(emailValue=="admin@admin.com" && passwordValue=="123")
 {
@@ -45,4 +56,22 @@ function calculate(){
         default :console.log("Invalid operation")
     }
     document.getElementById("mainResult").innerText=result;
+}
+function factorial()
+{
+    var num=parseInt(document.getElementById("fact").value);
+    var result=1;
+    for ( let i=1;i<=num;i++)
+{
+    result=result*i;
+}
+console.log("Factorial",result);
+    var row=BodyData.insertRow();
+    var col1=row.insertCell(0);
+    var col2=row.insertCell(1);
+
+    col1.innerHTML=num;
+    col2.innerHTML=result;
+
+    document.getElementById("fact").value = "";
 }

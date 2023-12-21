@@ -8,16 +8,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <div class="navbar"id="navbarId">
-        <img class="logo-image" src="./apple.png" alt="logo" />
-    <ul class="parent" >
-        <li onclick="method1()" 
-        class="child">store</li>
-        <li ></li>
-        <li  onclick="method2()"class="child">mac</li>
-        <li class="child text-secondary-emphasis">iPhone</li>
-        <li class="child">iPad</li>
-    </ul>
+  <div class="navbar" id="navbarId">
+    <img class="logo-image" src="./apple.png" alt="logo" />
+<ul class="parent" >
+    <li class="child">
+        <a href="./page1.html">Factorial</a>
+    </li>
+    <a href="./page2.html">Grocery</a>
+    <li onclick="method1()" class="child text-black ">Store</li>
+    <li class="child text-black bg-danger">Mac</li>
+    <li class="child">iPhone</li>
+    <li class="child">iPad</li>
+</ul>
 </div>
 <div class="form">
    
@@ -30,7 +32,19 @@
                 <span class="input-group-text" id="addon-wrapping">@</span>
                 <input   id="passwordField" type="text" class="form-control" placeholder="Enter password" aria-label="Username" aria-describedby="addon-wrapping">
               </div>
-              <button type="button" class="btn btn-primary">Submit</button>
+              <button type="button" onClick="submit()" class="btn btn-primary">Submit</button>
+</div>
+<div class="tableSection" >
+  <table class="border" id="dataTable">
+      <thead> 
+      <th>Email</th>
+      <th>Password</th>
+  </thead>
+  <tbody>
+    <tbody class="border" id="tBodyData">
+      
+  </tbody>
+  </table>
 </div>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -70,20 +84,8 @@
       </div>
     </div>
   </div>
-<!-- <div class="tableSection">
-    <table border>
-        <thead> 
-        <th>Email</th>
-        <th>Password</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>admin@admin.com</td>
-            <td>123</td>
-        </tr>
-    </tbody>
-    </table>
-</div> -->
+  
+
 <script src="./index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
